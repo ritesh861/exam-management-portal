@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 235px auto auto auto auto auto auto;
+  background-color: #d2dae7;
+  margin:0px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 10px;
+}
+
+.item1 {
+  grid-column: 1/ span 8;
+  grid-row:1;
+  height: 1.4vh;
+  background-color:#444444;
+
+}
+.item2 {
+  position: relative;
+grid-column:1;
+grid-row:1/ span 9;
+height: 94.5vh;
+background-color:#000000;
+border-radius:0px 25px 25px 0px;
+
+}
+.item3 {
+grid-column:2/ span 7;
+grid-row:2/ span 8;
+height: 87.75vh;
+background-color:#d2dae7;
+}
+
+
+/*for grid1 css*/
+.search-container{
+  width:40vh;
+  margin-left:300px;
+  margin-top: 6px;
+}
+.blog-box{
+background-color: #d2dae7;
+height:4.18vh;
+  width:25.31vh;
+  margin-left:1280px;
+  margin-top:-31px;
+  position:relative;
+  top:-12px;
+}
+
+/*for grid2 css*/
+.Sac{
+  position:absolute;
+  margin-top:0px;
+  color:#D3D3D3;
+  font-weight: 500;
+  font-size:18px;
+  padding:0px 5px 0px 80px;
+}
+.home{
+  margin-top:30px;
+  position:absolute;
+}
+
+.vertical-menu {
+  margin-top: 28px;
+  width:100%;
+font-size:14px;
+ position:absolute;
+ text-align: center;
+}
+
+.vertical-menu a {
+  background-color: black;
+  color: #D3D3D3;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+  color:black;
+  font-size:16px;
+  border-radius:25px 0px 0px 25px;
+}
+
+.gg a.active {
+ background-color: #d2dae7;
+  border-radius:50px 0px 0px 50px;
+  color: black;
+  font-size:16px;
+}
+.gg{
+  padding:2px 0px 2px 40px;
+}
+
+.s2{
+  margin-left: 28px;
+}
+
+/*for grid3 css*/
+.blog{
+  overflow:auto;
+}
+.sub{position:relative; height:24.9vh; width:115vh; background-color: #E8E8E8; margin-bottom:21.2px; border:1px solid #808080}
+
+.bimage{
+margin:12px 25px; border-radius:50%; height:11vh; width:11vh;
+ position:relative;
+}
+.btitle{
+  font-size:30px; margin-left:128px; margin-top:-90px;
+}
+.bst{
+  font-size:16px;color:#696969;margin-left:150px; margin-top:-30px;
+}
+.rm{
+  height:12vh; width:110vh; margin-top:28px; margin-left:20px;
+}
+.bcontent{
+font-weight:bold; font-size:16px; color:black; margin-top:-2px;
+}
+#more1, #more2, #more3, #nmore1, #nmore2, #nmore3 {display: none;
+}
+.nbox{
+  height:15vh; width:43.5vh; background-color:#E8E8E8; margin-left:10px; margin-top:18px; border:1px solid black; border-radius:18px;
+  box-shadow:0.1px 0.1px 3px red;
+}
+.rm, .note, .n1, .n2, .n3, .rlow {
+  overflow:auto;
+}
+/* width */
+::-webkit-scrollbar {
+  display:none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+</style>
+</head>
+<body style="margin:0px; padding:0px;">
+
+<div class="grid-container">
+  <div class="item1">
+
+    
+    
+  </div>
+  <div class="item2">
+    <div class="Sac">
+     NIT PATNA 
+    </div>
+<div class="vertical-menu">
+  <div class="gg"><a href="#" class="active"><span class="s1"><img class="i" src="National_Institute_of_Technology,_Patna_Logo (1).png" style="height:22px; width:22px; padding:0px 10px 0px 0px; position:absolute; margin-left:0px; float:left;"></span><span class="s2">
+Home</span></a> </div>
+<div class="gg"> <a href="#" onclick="myFunction()">MODEL PAPER 2019</a>
+<script>
+function myFunction() {
+  alert("First Login Please!");
+}
+</script>
+
+ </div>
+
+
+ <div class="gg"> <a href="http://www.nitp.ac.in/php/howtoreach.php">NIT MAP</a> </div>
+ <div class="gg"> <a href="examaboutus.html">ABOUT US</a> </div>
+</div>
+  </div>
+
+
+
+  <div class="item3">
+    <div class="upperh" style="position:absolute; margin-left:20px; margin-top:-17px; height:7vh; width:164.6vh;">
+    <div style="font-size:40px; text-align:center; padding-top: 10px; color:#2d3b53; font-weight: 900;">
+  NIT PATNA EXAMINATION PORTAL
+</div>
+  
+
+<div style="position:relative; left:1043px; top:-50px; height:4.4vh; width:24vh; margin-top:12px; background-color:#fed8b1;">
+  <a href="examlogin.html" style="position:relative; top:7px; color:#696969; border:none; padding-left:60px;text-decoration:none; color:#696969;font-weight:bold;font-size:16px;cursor: pointer;">
+SIGN IN
+  </a> 
+    </div>
+
+    </div>
+    <hr style="width:93%; margin-top:43px;">
+    <div class="blog" style="position:absolute; margin-left:20px; margin-top:12px; height:80.5vh; width:115.3vh;">
+          <div class="sub"><div class="bimage" style="background:url(nature.jpg); background-size:cover; background-position:center; background-repeat: no-repeat;"></div>
+              <p class="btitle">Work Smart not Work Hard<br><p class="bst" ><span>14th,October 2019.</span><span style="margin-left:50px;">Ritesh Kumar</span><span style="margin-left:50px;">#jee</span></p></p>
+
+             <div class="rm"> 
+              <p class="bcontent">Take a moment and think what you are doing is enough? Perhaps you see a tiny trail meande through a dense forest or smell blossoming wildflowers as you summit a mountain peak<span id="dots1">...</span><span id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</span></p>
+                <a style="font-size:17px; color:blue; font-weight:bold; cursor: pointer;" onclick="myFunction1()" id="myBtn1">Read More>></a>
+
+<script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+       </div>
+  
+        </div> 
+          <div class="sub"><div class="bimage" style="background:url(android1.png); background-size:cover; background-position:center; background-repeat: no-repeat;"></div>
+              <p class="btitle">Build A Simple Blog App With Firebase In Android Studio<br><p class="bst" ><span>14th,October 2019.</span><span style="margin-left:50px;">Sudhanshu Singh</span><span style="margin-left:50px;">#appdevelopment</span></p></p>
+
+
+           <div class="rm"> 
+              <p class="bcontent">Firebase is a Backend-as-a-service-BaaS-that started as a YC11 startup and grew up into a next-generation app-development platform on Google Cloud Platform<span id="dots2">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</span></p>
+                 <a style="font-size:17px; color:blue; font-weight:bold; cursor: pointer;" onclick="myFunction2()" id="myBtn2">Read More>></a>
+
+<script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+       </div>
+      
+
+        </div>
+          <div class="sub"><div class="bimage" style="background:url(w1.jpg); background-size:cover; background-position:center; background-repeat: no-repeat;"></div>
+              <p class="btitle">The absolute beginner's guide to Webflow<br><p class="bst" ><span>14th,October 2019.</span><span style="margin-left:50px;">Aman Raj Sunderam</span><span style="margin-left:50px;">#webdesign</span></p></p>
+
+            <div class="rm"> 
+              <p class="bcontent">In short,Webflow is a web design tool, CMS, and hosting platform.Each aspect of the platform is represented by a particular product/feature set<span id="dots3">...</span><span id="more3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</span></p>
+                 <a style="font-size:17px; color:blue; font-weight:bold; cursor: pointer;" onclick="myFunction3()" id="myBtn3">Read More>></a>
+
+<script>
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+       </div>
+        
+        </div>
+    </div>
+
+    <div class="notice" style="position:relative; left:889px; margin-left:20px; margin-top:-7px; height:83vh; width:46.8vh; ">
+      <div class="top" style="position:absolute; background-color: white; height:60vh; width:46.55vh; border:1px solid #888888">
+      <div class="rtop" style="height:6.5vh; width:46.5vh; background-color:black; margin-top:-12px;">
+        <h1 style="color:white; font-size:18px; padding:15px; margin-left:90px;"> NOTICE BOARD </h1>
+      </div>
+      <div class="note" style="height:53.5vh; width:46.5vh;">
+        <div class="nbox">
+          <h2 class="nh2"style="margin-left:15px;margin-top:5px;">RITESH KUMAR</h2> <hr style="background-color:black; width:93%; margin-top:-8px;">
+          <div class="n1" style="height:9.5vh; width:43.5vh; border-radius:0px 0px 18px 18px;">
+            <p style="font-size:15px; margin-left:18px;margin-top:2px; font-weight:500;">#jee<br>JEE 2020 schedule is announced<span id="ndots1">...</span><span id="nmore1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue </span></p>
+            <a style="font-size:15px; color:blue; font-weight:600; cursor: pointer; padding-left: 18px;" onclick="mynFunction1()" id="nmyBtn1">Read More</a>
+        <script>
+
+function mynFunction1() {
+  var dots = document.getElementById("ndots1");
+  var moreText = document.getElementById("nmore1");
+  var btnText = document.getElementById("nmyBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script></div>
+</div>
+
+        <div class="nbox">
+          <h2 class="nh2"style="margin-left:15px;margin-top:5px;">SUDHANSHU SINGH</h2> <hr style="background-color:black; width:93%; margin-top:-8px;">
+          <div class="n2" style="height:9.5vh; width:43.5vh; border-radius:0px 0px 18px 18px;">
+            <p style="font-size:15px; margin-left:18px;margin-top:2px; font-weight:500;">#nitp<br>NIT PATNA examination app new version is uploaded<span id="ndots2">...</span><span id="nmore2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue </span></p>
+            <a style="font-size:15px; color:blue; font-weight:600; cursor: pointer; padding-left: 18px;" onclick="mynFunction2()" id="nmyBtn2">Read More</a>
+        <script>
+
+function mynFunction2() {
+  var dots = document.getElementById("ndots2");
+  var moreText = document.getElementById("nmore2");
+  var btnText = document.getElementById("nmyBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script></div>
+        </div>
+        <div class="nbox">
+          <h2 class="nh2"style="margin-left:15px;margin-top:5px;">AMAN RAJ SUNDERAM</h2> <hr style="background-color:black; width:93%; margin-top:-8px;">
+          <div class="n3" style="height:9.5vh; width:43.5vh; border-radius:0px 0px 18px 18px;">
+            <p style="font-size:15px; margin-left:18px;margin-top:2px; font-weight:500;">#nitp<br>Interview for the member of web is scheduled<span id="ndots3">...</span><span id="nmore3">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue </span></p>
+            <a style="font-size:15px; color:blue; font-weight:600; cursor: pointer; padding-left: 18px;" onclick="mynFunction3()" id="nmyBtn3">Read More</a>
+        <script>
+
+function mynFunction3() {
+  var dots = document.getElementById("ndots3");
+  var moreText = document.getElementById("nmore3");
+  var btnText = document.getElementById("nmyBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script></div>
+        </div>
+      </div>
+    </div>
+    <div class="rlow" style="position:relative; top:467px; background-color:#E8E8E8; height:22.5vh; width:46.55vh; border-radius:15px 15px 0px 0px; border:1px solid #888888">
+      <p style="font-size:22px; font-family: Times New Roman, Times, serif; margin-left: 80px;margin-top:10px;">Like And Follow Us<hr style="width:90%;margin-top:-10px;"></p>
+      <i class="fa fa-facebook" style="font-size:36px; margin-left:110px;margin-top:15spx;"></i>
+      <i class="fa fa-twitter" style="font-size:36px; margin-left:20px;"></i>
+      <i class="fa fa-instagram" style="font-size:36px; margin-left:20px;"></i>
+    </div>
+    </div>
+  </div>  
+  
+</div>
+
+</body>
+</html>

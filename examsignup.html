@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;background-color:#d2dae7;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+ input[type=text],input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius:15px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 115px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  float:center;
+  border-radius:25px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding:10px ;
+  
+}
+
+.box{
+overflow:auto;
+margin:170px 500px 170px 500px;
+height:400px;
+border:1px solid black;
+background-color:#ccc;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+<div class="box">
+<form action="http://localhost/Exam/sign_up_redirect.php" method="post">
+<div style="background-color:white; padding:15px 0px 10px 35px; border-bottom: 1.3px solid black;">
+<span style="font-size:36px;">Signup</span>
+<a href="exam.html"><img src="./ds.png" style="height:33px; width:33px; float:right;"></a>
+</div>
+  <div class="container">
+  
+      <input  id="fname" type="text" placeholder="First Name" name="f_name" style="width:49.4%;" required>
+    <input  id="lname" type="text" placeholder="Last Name" name="l_name" required style="width:49.4%;">
+   
+    <input id="roll" type="text" placeholder="Enter Rollno." name="roll" required>
+    <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+    <input id="pwd" type="password" placeholder="Enter Password" name="psw" required>
+
+    <input id="rpwd" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <div class="clearfix">
+      <input type="submit"  class="signupbtn">
+    </div>
+  </div>
+  <span style="font-size:20px; margin-left:230px;">OR</span>
+  <hr style="width:80%;">
+  
+<div class="but" style="width:210px; height:44px; margin-left:143px; background-color:#4885ed; border:none;">
+<div class="icon" style="background-color:white; width:41px; padding:4.5px; position:relative; left:1px; top:1.6px;">
+<img src="https://img.icons8.com/color/48/000000/google-logo.png" style="height:27px;width:27px; float:center; padding:0.7px;"></div>
+<div style="color:white;  margin-left:55px; font-size:14px; font-weight:600; position:relative; top:-26px;">Sign up with Google
+</div>
+</div>
+  <p style="text-align:center; font-weight:600;">Already have an account ? <a href="examlogin.html">Login</a>
+</form>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBOZpREqLFppDULMpSKtnLQBfnummtHrgA",
+    authDomain: "nitp-482d3.firebaseapp.com",
+    databaseURL: "https://nitp-482d3.firebaseio.com",
+    projectId: "nitp-482d3",
+    storageBucket: "nitp-482d3.appspot.com",
+    messagingSenderId: "267967710758",
+    appId: "1:267967710758:web:d9cdc2ef5be60e06cd08e7",
+    measurementId: "G-X00PC0QR41"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+<script type="text/javascript">
+  function makeUser(){
+    var fname=document.getElementById('fname').value;
+    var lname=document.getElementById('lname').value;
+    var email=document.getElementById('email').value;
+    var pwd=document.getElementById('pwd').value;
+    var rpwd=document.getElementById('rpwd').value;
+
+    var post = {
+      fname: fname,
+      lname: lname,
+      email: email,
+      pwd: pwd,
+      rpwd: rpwd
+    };
+
+    var updates ={};
+    updates['/users/user1'] = post;
+    return firebase.database().ref().update(updates);
+  }
+</script>
+</body>
+</html>
